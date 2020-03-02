@@ -86,7 +86,7 @@ function tableRow($serverportrow) {
 <!DOCTYPE html>
 <html>
 <head>
-<title>Deep Space</title>
+<title>ServerDashboard</title>
 <style>
 table,th,td {
 	border: 1px solid black;
