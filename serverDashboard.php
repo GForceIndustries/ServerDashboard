@@ -11,6 +11,13 @@ $serverports = array (
 
 <?php
 
+// define page refresh time
+$refreshtime = 5000;
+
+?>
+
+<?php
+
 // define colours for port open or closed
 $bgcolorportopen = "#00FF00";
 $bgcolorportclosed = "#FF0000";
@@ -88,11 +95,11 @@ table,th,td {
 </style>
 <script type="text/JavaScript">
 	function AutoRefresh( t ) {
-		//setTimeout("location.reload(true);", t);
+		setTimeout("location.reload(true);", t);
 	}
 </script>
 </head>
-<body onload="JavaScript:AutoRefresh(5000);">
+<body onload="JavaScript:AutoRefresh(<?php echo $refreshtime; ?>);">
 
 <div id="table">
 
